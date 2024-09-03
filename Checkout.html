@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Checkout</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/checkout.jpg">
+    </head>
+    <section>
+        <div class="header">
+            <div class="logo">
+                <img src="images/luxe bytes.jpg" alt="Luxe Bites Brasserie">
+            </div>
+            <div class="home">
+                <button onclick="window.location.href='index.html'">Back to Home</button>
+            </div>
+        </div>
+        <h1 style="text-align:center">Checkout</h1>
+        <section class="payment">
+            <input type="radio" id="cash" name="payment-method">
+            <label for="cash">
+                <img src="images/cash.jpg" alt="cash" width="20px;"> Cash on Delivery
+            </label><br><br>
+            <input type="radio" id="debit" name="payment-method">
+            <label for="debit">
+                <img src="images/debit.jpg" alt="debit" width="20px;"> Debit Card
+            </label><br>
+            <form id="option1">
+                <input type="text" name="holder name" placeholder="Card holder name"><br>
+                <input type="number" name="card-number" placeholder="Card Number"><br>
+                <input type="number" name="cvv" placeholder="CVV" class="cvv">
+                <input type="number" name="expiry" placeholder="Expiry Date" class="ed">
+            </form><br>
+            <input type="radio" id="credit" name="payment-method">
+            <label for="credit">
+                <img src="images/credit.jpg" alt="credit" width="20px;"> Credit Card
+            </label><br>
+            <form id="option1">
+                <input type="text" name="holder name" placeholder="Card holder name"><br>
+                <input type="number" name="card-number" placeholder="Card Number"><br>
+                <input type="number" name="cvv" placeholder="CVV" class="cvv">
+                <input type="number" name="expiry" placeholder="Expiry Date" class="ed">
+            </form><br>
+            <input type="radio" id="net" name="payment-method">
+            <label for="net">
+                <img src="images/net.jpg" alt="net" width="20px;"> Net Banking
+            </label><br>
+            <select name="option" id="option" onchange="if(this.value) window.location.href=this.value;">
+                <option value="" disabled selected>--Select Bank--</option>
+                <option value="#">SBI</option>
+                <option value="#">Union</option>
+                <option value="#">Axis</option>
+                <option value="#">Kotak Mahindra</option>
+                <option value="#">Bank of Baroda</option>
+                <option value="#">Punjab National Bank</option>
+                <option value="#">American Bank</option>
+                <option value="#">Canara Bank</option>
+                <option value="#">Corporate bank</option>
+            </select><br><br>
+            <input type="radio" id="wallet" name="payment-method">
+            <label for="wallet">
+                <img src="images/wallet.jpg" alt="wallet" width="20px;"> Wallet
+            </label><br><br>
+            <input type="radio" id="upi" name="payment-method">
+            <label for="upi">
+                <img src="images/upi.jpg" alt="upi" width="30px;"> Other UPI apps
+            </label><br>
+            <select name="option" id="option" onchange="if(this.value) window.location.href=this.value;">
+                <option value="" disabled selected>--Select UPI app--</option>
+                <option value="#">PhonePay</option>
+                <option value="#">Gpay</option>
+                <option value="#">Paytm</option>
+                <option value="#">Axis UPI</option>
+                <option value="#">Amazon Pay</option>
+                <option value="#">Apple Pay</option>
+                <option value="#">Samsung Pay</option>
+            </select>
+
+            <button onclick="window.location.href='thanku.html'" class="final">Pay and Place Order</button>
+        </section>
+    </body>
+</html>

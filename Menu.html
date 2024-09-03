@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="images/menu.png">
+    </head>
+    <body>
+        <div class="header">
+            <img src="images\luxe bytes.jpg" alt="logo" width="80px" class="logo">
+            <h1>Luxe Bites Brasserie Menu</h1>
+        </div>
+        <div class="menubar">
+            <a href="index.html">Home</a>
+            <select name="Food" id="Food" onchange="if(this.value) window.location.href=this.value;">
+                <option value="" disabled selected>--Select Cuisine--</option>
+                <option value="#Indian">Indian</option>
+                <option value="#Mexican">Mexican</option>
+                <option value="#Italian">Italian</option>
+                <option value="#Chinese">Chinese</option>
+                <option value="#Korean">Korean</option>
+                <option value="#Japanese">Japanese</option>
+            </select>
+        </div>
+        <div class="menucontainer">
+            <section id="Indian">
+                <h2>Indian Cuisine</h2>
+                <div class="menusection">
+                    <div class="foodcard">
+                        <img src="images\butter-chicken.jpg" alt="Butter Chicken">
+                        <h3>Butter Chicken</h3>
+                        <p>A rich and creamy dish with tender chicken pieces cooked in a tomato-based gravy.</p>
+                        <p class="price">Price: ₹400</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button type="button" onclick="this.previousElementSibling.stepUp()"">Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\mutton-biryani.jpg" alt="Biryani">
+                        <h3>Biryani</h3>
+                        <p>A flavorful rice dish with a blend of aromatic spices and tender meat.</p>
+                        <p class="price">Price: ₹250</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button type="button" onclick="this.previousElementSibling.stepUp()">Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\masala-dosa.jpg" alt="Masala Dosa">
+                        <h3>Masala Dosa</h3>
+                        <p>A roasted dosa served with potato curry, chutney, and sambar</p>
+                        <p class="price">Price: ₹150</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button type="button" onclick="this.previousElementSibling.stepUp()"">Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Mutton-Rogan-Josh.jpg" alt="Mutton Rogan Josh">
+                        <h3>Mutton Rogan Josh</h3>
+                        <p>It is an aromatic curried meat dish originating from Kashmir</p>
+                        <p class="price">Price: ₹600</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Paneer-Tikka-Masala.jpg" alt="Paneer Tikka Masala">
+                        <h3>Paneer Tikka Masala</h3>
+                        <p>Food without paneer is like a day without sunshine.....</p>
+                        <p class="price">Price: ₹350</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Irani-Chai.jpg" alt="Irani Chai">
+                        <h3>Irani Chai</h3>
+                        <p>Chai: the perfect blend of warmth and happiness.</p>
+                        <p class="price">Price: ₹50</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Mexican">
+                <h2>Mexican Cuisine</h2>
+                <div class="menusection">
+                    <div class="foodcard">
+                        <img src="images\Tacos.jpg" alt="Tacos">
+                        <h3>Tacos</h3>
+                        <p>A traditional Mexican dishof a small hand-sized corn tortilla topped with a filling</p>
+                        <p class="price">Price: ₹250</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Guacamole.jpg" alt="Guacamole">
+                        <h3>Guacamole</h3>
+                        <p>Bowl with mashed, raw avocados mixed with other ingredients to taste.</p>
+                        <p class="price">Price: ₹300</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Enchiladas.jpg" alt="Enchiladas">
+                        <h3>Enchiladas</h3>
+                        <p>A Mexican dish made from tortillas wrapped around cheese, and cooked in a spicy sauce</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Churros.jpg" alt="Churros">
+                        <h3>Churros</h3>
+                        <p>Churros are sweet and crispy on the outside, but fluffy on the inside.</p>
+                        <p class="price">Price: ₹200</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Quesadilla.jpg" alt="Quesadilla">
+                        <h3>Quesadilla</h3>
+                        <p>A Mexican dish of a tortilla folded in half and filled with cheese and other fillings, cooked until crispy and golden brown</p>
+                        <p class="price">Price: ₹250</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Pozole.jpg" alt="Pozole">
+                        <h3>Pozole</h3>
+                        <p>A thick soup chiefly of Mexico made with pork, hominy, garlic, and chili.</p>
+                        <p class="price">Price: ₹400</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Italian">
+                <h2>Italian Cuisine</h2>
+                <div class="menusection">
+                    <div class="foodcard">
+                        <img src="images\Pizza-Margherita.jpg" alt="Pizza-Margherita">
+                        <h3>Pizza-Margherita</h3>
+                        <p>A classic Italian dish that's known for its flavorful ingredients and harmonious taste</p>
+                        <p class="price">Price: ₹250</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Lasagna.jpg" alt="Lasagna">
+                        <h3>Lasagna</h3>
+                        <p>A classic Italian dish of pasta sheets layered with fillings and baked</p>
+                        <p class="price">Price: ₹400</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Risotto.jpg" alt="Risotto">
+                        <h3>Risotto</h3>
+                        <p>An Italian rice dish cooked with broth until it reaches a creamy consistency</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Tiramisu.jpg" alt="Tiramisu">
+                        <h3>Tiramisu</h3>
+                        <p>An Italian dessert made of ladyfinger pastries dipped in coffee</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Spaghetti-Carbonara.jpg" alt="Spaghetti Carbonara">
+                        <h3>Spaghetti-Carbonara</h3>
+                        <p>It is a pasta dish made with fatty cured pork, hard cheese, eggs, salt, and black pepper</p>
+                        <p class="price">Price: ₹350</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Chicken-Parmesan.jpg" alt="Chicken Parmesan">
+                        <h3>Chicken Parmesan</h3>
+                        <p>A dish made of breaded chicken breast covered in tomato sauce and mozzarella</p>
+                        <p class="price">Price: ₹400</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Chinese">
+                <h2>Chinese Cuisine</h2>
+                <div class="menusection">
+                    <div class="foodcard">
+                        <img src="images\Kung-Pao-Chicken.jpg" alt="Kung Pao Chicken">
+                        <h3>Kung Pao Chicken</h3>
+                        <p>Chinese-style stir-fried chicken cubes with dried chili peppers</p>
+                        <p class="price">Price: ₹200</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Dumplings.jpg" alt="Dumplings">
+                        <h3>Dumplings</h3>
+                        <p>delicate, bite-sized treats of different fillings wrapped in a thin layer of dough</p>
+                        <p class="price">Price: ₹150</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Peking-Duck.jpg" alt="Peking Duck">
+                        <h3>Peking Duck</h3>
+                        <p>A beautifully bronzed, roast duck with a crispy skin and deliciously juicy meat</p>
+                        <p class="price">Price: ₹450</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Sweet-and-Sour-Pork.jpg" alt="Sweet and Sour Pork">
+                        <h3>Sweet and Sour Pork</h3>
+                        <p>crispy battered pork coated in a sweet and tangy sauce.</p>
+                        <p class="price">Price: ₹400</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Fried-Rice.jpg" alt="Fried Rice">
+                        <h3>Fried Rice</h3>
+                        <p>A traditional Chinese preparation of cooked rice, vegetables, protein, and soy sauce</p>
+                        <p class="price">Price: ₹250</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Chow-Mein.jpg" alt="Chow Mein">
+                        <h3>Chow Mein</h3>
+                        <p>A popular Chinese dish of stir-fried noodles, vegetables, and sometimes meat or tofu</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Korean">
+                <h2>Korean Cuisine</h2>
+                <div class="menusection">
+                    <div class="foodcard">
+                        <img src="images\Kimchi.jpg" alt="Kimchi">
+                        <h3>Kimchi</h3>
+                        <p>A Korean dish of fermented vegetables and seasonings that's salty, sour, and flavorful</p>
+                        <p class="price">Price: ₹600</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Bibimbap.jpg" alt="Bibimbap">
+                        <h3>Bibimbap</h3>
+                        <p>It is served as a bowl of warm white rice topped with namul</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Bulgogi.jpg" alt="Bulgogi">
+                        <h3>Bulgogi</h3>
+                        <p>A Korean dish of thinly-sliced meat that's marinated and grilled or pan-fried</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Tteokbokki.jpg" alt="Tteokbokki">
+                        <h3>Tteokbokki</h3>
+                        <p>It is a popular Korean food made from small-sized garae-tteok</p>
+                        <p class="price">Price: ₹450</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Japchae.jpg" alt="Japchae">
+                        <h3>Japchae</h3>
+                        <p>It is a savory and slightly sweet dish of stir-fried glass noodles and vegetables</p>
+                        <p class="price">Price: ₹400</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Bossam.jpg" alt="Bossam">
+                        <h3>Bossam</h3>
+                        <p>A popular Korean dish of thinly-sliced, boiled pork belly wrapped in leafy greens</p>
+                        <p class="price">Price: ₹550</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section id="Japanese">
+                <h2>Japanese Cuisine</h2>
+                <div class="menusection">
+                    <div class="foodcard">
+                        <img src="images\Sushi.jpg" alt="Sushi">
+                        <h3>Sushi</h3>
+                        <p>A Japanese dish of prepared vinegared rice usually with some sugar and salt</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Ramen.jpg" alt="Ramen">
+                        <h3>Ramen</h3>
+                        <p>Ramen reminds us that simple ingredients can create extraordinary experiences.</p>
+                        <p class="price">Price: ₹700</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Tempura.jpg" alt="Tempura">
+                        <h3>Tempura</h3>
+                        <p>A Japanese dish of lightly battered and deep-fried seafood and vegetables</p>
+                        <p class="price">Price: ₹500</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Teriyaki-Chicken.jpg" alt="Teriyaki Chicken">
+                        <h3>Teriyaki Chicken</h3>
+                        <p>A Japanese dish of chicken that's grilled and brushed with a sweet and savory sauce</p>
+                        <p class="price">Price: ₹450</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Miso-Soup.jpg" alt="Miso Soup">
+                        <h3>Miso Soup</h3>
+                        <p>A traditional Japanese soup made from a combination of dashi stock and miso paste</p>
+                        <p class="price">Price: ₹250</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                    <div class="foodcard">
+                        <img src="images\Soba.jpg" alt="Soba">
+                        <h3>Soba</h3>
+                        <p>A Japanese noodle made from buckwheat flour, with a little wheat flour mixed in</p>
+                        <p class="price">Price: ₹350</p>
+                        <div class="quantity-container">
+                            <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                            <input type="number" name="quantity" value="0" min="0" max="10" step="1">
+                            <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                        </div>
+                        <button>Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="check">
+            <button onclick="window.location.href='Checkout.html'">Checkout</button>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,542 @@
+body {
+    background: rgb(159, 107, 55);
+    margin: 0;
+    padding: 0;
+    font-family: 'Pacifico', cursive;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(159, 107, 55);
+}
+
+.logo img {
+    width: 80px;
+}
+
+.mainbar ,.menubar{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    padding: 10px 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menubar{
+    position:sticky;
+    top:0;
+}
+
+.mainbar a, .menubar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.mainbar a:hover ,.menubar a:hover{
+    text-decoration: underline orangered;
+}
+
+.login button {
+    padding: 15px 25px;
+    font-size: 14px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: lightgray;
+}
+
+.wallet {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.wallet img {
+    width: 40px;
+    margin-right: 20px;
+}
+
+.balance {
+    padding: 5px 15px;
+    background-color: #333;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    align-items:center;
+    font-weight: bold;
+    position: absolute;
+    top: 5px;
+    right: -120px;
+    visibility: hidden;
+    transition: visibility;
+    opacity: 0;
+    display:flex;
+}
+
+.coupon{
+    padding: 5px 15px;
+    background-color: #333;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    align-items:center;
+    font-weight: bold;
+    position: absolute;
+}
+
+.wallet:hover .balance {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cart img {
+    width: 40px;
+}
+
+.slides{
+    width: 100%; /* Subtracting the padding on the left and right */
+    max-width: 30px; /* Matching the width to the mainbar */
+    margin: 20px; /* Centering the slides below the mainbar */
+    width: 100%;
+    max-width: 1408px;
+    margin: auto;
+    overflow: hidden;
+    height: 600px;
+    position:relative;
+}
+
+.slides .food1, .slides .food2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transition: left 1s ease-in-out;
+}
+
+.slides .food1 {
+    left: 0;
+    margin-top:0px;
+    margin-left:0px;
+    animation: slide1 10s infinite;
+}
+
+.slides .food2 {
+    left: 0;
+    margin-top:0px;
+    margin-left:0px;
+    animation: slide2 10s infinite;
+}
+
+
+@keyframes slide1 {
+    0%, 33% {
+        left: 0;
+    }
+    66%, 100% {
+        left: -100%;
+    }
+}
+
+@keyframes slide2 {
+    0%, 33% {
+        left: 100%;
+    }
+    66%, 75% {
+        left: 0;
+    }
+}
+
+.food1, .food2{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.food1 img, .food2 img{
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    text-align: left;
+    color: white;
+}
+
+.overlay h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.overlay p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.overlay .but {
+    padding: 15px 25px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.overlay .but:hover {
+    background-color: lightgray;
+}
+
+.menucontainer {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.menucontainer h2 {
+    text-align: center;
+}
+
+.menusection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.locsection{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.foodcard {
+    background-color: white;
+    border: 1px solid rgb(225, 217, 192);
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.foodcard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.foodcard h3 {
+    text-align:center; 
+    color: #333;
+}
+
+.foodcard p {
+    font-size: 14px;
+    color: #666;
+}
+
+.foodcard button {
+    padding: 10px 20px;
+    background-color: rgb(40, 167, 69);
+    border: none;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight:bold;
+}
+
+.foodcard button:hover {
+    background-color: rgb(33, 136, 56);
+}
+
+.c1,.c2{
+    color:black;
+}
+
+.footer a{
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background-color: black;
+    border: 3px solid orangered;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin: 4rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #5c3131;
+    margin-right:140px ;
+    margin-left: 140px;
+}
+
+.footer a:hover{
+    color: black;
+    box-shadow: 0  0 25px orangered;
+}
+.Branches{
+    text-align:center;
+}
+
+.loccard {
+    background-color: white;
+    border: 1px solid rgb(225, 217, 192);
+    border-radius: 10px;
+    width: 720px;
+    height:630px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loccard iframe {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+}
+
+footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+}
+
+#Food{
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.foodcard .price{
+    font-weight:bold;
+    color:rgb(0, 0, 0);
+}
+
+.quantity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.quantity-container button:hover {
+    background-color: #ccc;
+}
+
+.quantity-container input {
+    width: 50px;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.check button {
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px;  /* Distance from the right of the viewport */
+    background-color: rgb(40, 167, 69);
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.check button:hover {
+    background-color: rgb(33, 136, 56);
+}
+
+.check2 img {
+    top: 29px;
+    margin-right:-90px;
+    cursor: pointer;
+    width:40px;
+}
+
+.cvv{
+    width:45px;
+}
+
+.ed{
+    width:110px;
+}
+
+.payment{
+    background-color: white;
+    border: 1px solid rgb(225, 217, 192);
+    border-radius: 10px;
+    width: 250px;
+    margin-left:560px;
+    padding: 15px;
+    padding-left:60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#option{
+    margin-left: 20px;
+    padding:10px;
+    border-radius:10px;
+}
+
+#option1{
+    margin-left:20px;
+}
+
+.final{
+    padding: 10px 20px;
+    background-color: rgb(40, 167, 69);
+    border:2px solid black;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.payment button:hover {
+    background-color: rgb(33, 136, 56);
+}
+
+.home button{
+    padding: 15px 25px;
+    font-size: 14px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration:none;
+    color:black;
+    cursor: pointer;
+}
+
+.home button:hover {
+    background-color: lightgray;
+}
+
+.thanku{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.thanku button{
+    padding: 10px 20px;
+    border:2px solid black;
+    border-radius:10px;
+    background-color: rgb(40, 167, 69);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.thanku button:hover{
+    background-color: rgb(33, 136, 56);
+}
+
+.loginpage{
+    background-color: white;
+    border: 1px solid rgb(225, 217, 192);
+    border-radius: 10px;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#register{
+    text-align:center;
+}
+
+#box{
+    text-align:center;
+}
+.tex{
+    text-align: center;
+}
+#button{
+    border-radius: 10px;
+    padding:10px 20px;
+    background-color:rgb(40, 167, 69);
+    color:white;
+}
+
+#button:hover{
+    background-color:rgb(33, 136, 56);
+}
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 330px;
+}
+
+.service-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.service-button:hover {
+    background-color: #45a049;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width: 80%;
+    max-width: 600px;
+}
+
+#service{
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
